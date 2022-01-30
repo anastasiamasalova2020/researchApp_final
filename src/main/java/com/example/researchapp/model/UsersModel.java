@@ -54,7 +54,7 @@ public class UsersModel {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UsersModel that = (UsersModel) o;
-        return Objects.equals(id, that.id) && Objects.equals(login, that.login) && Objects.equals(password, that.password) && Objects.equals(email, that.email);
+        return Objects.equals(id, that.id) && Objects.equals(login, that.login) && Objects.equals(password, that.password);
     }
 
     @Override
@@ -67,7 +67,7 @@ public class UsersModel {
         return "UsersModel{" +
                 "id=" + id +
                 ", login='" + login + '\'' +
-                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
