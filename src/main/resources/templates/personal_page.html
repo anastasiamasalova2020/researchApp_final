@@ -3,7 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Page</title>
-    <link rel="stylesheet" href="css/stylePersonal.css">
+    <style>
+        body {
+            background-color: azure;
+            text-align: center;
+            font-family: sans-serif;
+            background-position: center;
+        }
+        h1 {
+            font-size: 30px;
+            color: #0e1348;
+        }
+        .container{
+            margin: 0 auto;
+            position: fixed;
+            top: 25%;
+            left: 18%;
+            text-align: center;
+            width: 1000px;
+            height: 450px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #0e1348;
+            vertical-align: top;
+        }
+         .rectangle1 {
+             width: 300px;
+             height: 400px;
+             background-color: white;
+             border: 2px #0e1348 solid;
+             border-radius: 15px;
+             float: left;
+             margin-right: 100px;
+         }
+        h3 {
+            font-size: 20px;
+            color: #0e1348;
+            vertical-align: top;
+        }
+         .rectangle2 {
+             width: 300px;
+             height: 400px;
+             background-color: white;
+             border: 2px #0e1348 solid;
+             border-radius: 15px;
+             float: left;
+         }
+    </style>
 </head>
 <body>
 <h1>Welcome to the personal page <span th:text="${userLogin}"></span> </h1>
